@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | BacaanKu</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style/perpustakaan.css" />
+</head>
+
+<body>
+    <input type="checkbox" id="mobile-menu" />
+
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/index.html"><span>Mari</span>Belajar.</a>
+        </div>
+        
+        <!-- Watemark -->
+        <div>
+            <p class="fa text-mmd ">Copyright © afifahrahma22</p>
+        </div>
+        <!-- Akhir Watermark -->
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="/perpustakaan.html"><i class="fa fa-home"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a href="/buku.html"><i class="fa fa-book"></i> Bacaan</a>
+                </li>
+                <!--logout button-->
+                <li> <!--<i class="fa fa-sign-out-alt"></i>--> </li>
+            </ul>
+        </div>
+    </div>
+
+    <label for="mobile-menu" id="mmenu">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-times"></i>
+    </label>
+
+    <div class="content">
+        <div class="top">
+            <div class="search">
+                <input type="text" placeholder="Search Book" />
+            </div>
+        </div>
+
+        <h2 id="heading"></h2>
+        <div class="about">
+            <div class="text-about">
+                <h1><span>Mari</span>Membaca.</h1>
+                <p>
+                    Membaca adalah perjalanan tanpa batas ke dunia-dunia baru yang tak terjamah. Dalam setiap halaman, kita menemukan jendela ke pemikiran-pemikiran manusia, cerita-cerita yang mempesona, dan pengetahuan yang tak terhingga. Membaca adalah kekuatan untuk melintasi zaman dan ruang, memungkinkan kita menjelajahi dunia tanpa perlu meninggalkan tempat duduk kita. Melalui buku, kita bisa belajar, terinspirasi, dan mengalami petualangan yang tiada batas. Jika mata adalah jendela ke dunia, maka buku adalah pintu gerbang menuju pengetahuan tak terbatas.
+                </p>
+            </div>
+        </div>
+
+        <h2 id="heading">Categories</h2>
+        <div class="categories">
+            <div class="category">
+                <a href="" style="color: white">
+                    <h3>Dongeng</h3>
+                    <!-- <img src="img/goal.webp" alt="" /> -->
+                </a>
+            </div>
+        
+            <div class="category-secondary">
+                <h3>Cerpen</h3>
+                <!-- <img src="img/dumbbell.webp" alt="" /> -->
+            </div>
+        
+            <div class="category">
+                <h3>Puisi</h3>
+                <!-- <img src="img/shoe.webp" alt="" /> -->
+            </div>
+        </div>
+
+        <h2 id="heading">Books</h2>
+        <div class="all-products-2">
+            <div class="products-2">
+                <div class="product-2">
+                    <a href="/assets/buku/Si_Cerdik.pdf" style="color: rgb(204, 202, 202);" target="_blank">
+                        <img src="/assets/sampul/si_cerdik.jpeg">
+                        <div class="name">
+                            <h5>Kalah Oleh Si Cerdik</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-2">
+                    <a href="/assets/buku/ibu_ayam.pdf" style="color: rgb(204, 202, 202);" target="_blank">
+                        <img src="/assets/sampul/ibu_ayam.jpeg">
+                        <div class="name">
+                            <h5>Ibu Ayam</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-2">
+                    <a href="/assets/buku/asal_usul_burung_hantu.pdf" style="color: rgb(204, 202, 202);" target="_blank">
+                        <img src="/assets/sampul/asal_usul_burung_hantu.jpeg">
+                        <div class="name">
+                            <h5>Asal Usul Burung Hantu</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        feather.replace()
+    </script>
+
+    <script src="/style/perpustakaan.js"></script>
+</body>
+
+</html>

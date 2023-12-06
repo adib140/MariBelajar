@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+        <link href="<link rel=preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script src="https://fontawesome.com/icons"></script>
+
+
+        <link rel="stylesheet" href="/style/video.css">
+
+        <title>Video</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+             <!--Navbar-->
+            <nav class="navbar">
+
+                <a href="#" class="logo">
+                    <span>Mari</span>Belajar.
+                </a>
+
+                <div class="navbar-nav">
+                    <a href="/index.html">Home</a>
+                    <a href="/video.html">Video</a>
+                    <a href="/perpustakaan.html">Perpustakaan</a>
+                    <a href="#">Info Sekolah</a>
+                </div>
+
+                <div class="navbar-extra">
+                    <a href="#hamburger-menu"><i data-feather="menu"></i></a>
+                </div>
+
+                <!--Sidebar-->
+                <div class="sidebar">
+                </div>
+            </nav>
+
+            <!--searchbar-->
+            <div class="search-box">
+                <input type="text" placeholder="Mau cari apa?">
+                
+                <div class="search-icon">
+                  <i class="fas fa-search"></i>
+                 </div>
+        
+                <div class="cancel-icon">
+                        <i class="fas fa-times"></i>
+                 </div>
+        
+        
+                <div class="search-data">
+        
+                 </div>
+        
+        
+              </div>
+        
+            <script>
+                const searchBox = document.querySelector(".search-box");
+                const searchBtn = document.querySelector(".search-icon");
+                const cancelBtn = document.querySelector(".cancel-icon");
+                const searchInput = document.querySelector("input");
+                const searchData = document.querySelector(".search-data");
+                searchBtn.onclick =()=>{
+                  searchBox.classList.add("active");
+                  searchBtn.classList.add("active");
+                  searchInput.classList.add("active");
+                  cancelBtn.classList.add("active");
+                  searchInput.focus();
+                  if(searchInput.value != ""){
+                    var values = searchInput.value;
+                    searchData.classList.remove("active");
+                    searchData.innerHTML = "You just typed " + "<span style='font-weight: 500;'>" + values + "</span>";
+                  }else{
+                    searchData.textContent = "";
+                  }
+                }
+                cancelBtn.onclick =()=>{
+                  searchBox.classList.remove("active");
+                  searchBtn.classList.remove("active");
+                  searchInput.classList.remove("active");
+                  cancelBtn.classList.remove("active");
+                  searchData.classList.toggle("active");
+                  searchInput.value = "";
+                }
+              </script>
+            
+            
+                <!--video-box-->
+            <section class="video">
+                <!--survival-->
+                <h1>Survival <span>lihat semua..</span></h1>
+                <div class="survival">
+
+                    <a href="/videoplay.html">
+                        <div class="videobox1">
+                            <div class="img video1" ></div>
+                            <h2>Video Survival</h2>
+                            <p>
+                                Dede Inoen                
+                            
+                            </p>
+                        </div>
+                    </a>
+                   
+
+                    <div class="videobox1">
+                        
+                        <div class="img video1"></div>
+                        <h2>Video Survival</h2>
+                        <p>
+                            Dede Inoen                
+                        
+                        </p>
+                    </div>
+
+                    <div class="videobox1">
+                        
+                        <div class="img video1"></div>
+                        <h2>Video Survival</h2>
+                        <p>
+                            Dede Inoen               
+                        
+                        </p>
+                    </div>
+
+                    <div class="videobox1">
+                        
+                        <div class="img video1"></div>
+                        <h2>Video Survival</h2>
+                        <p>
+                            Dede Inoen               
+                        
+                        </p>
+                    </div>
+
+                    
+                </div>
+
+                <!--beternak-->
+                <h1>Beternak <span>lihat semua..</span></h1>
+                <div class="beternak">
+                    <div class="videobox2">
+                        
+                        <div class="img2 video2"></div>
+                        <h2>Video Berternak</h2>
+                        <p>
+                            Windah Basudara                
+                        
+                        </p>
+                    </div>
+
+                    <div class="videobox2">
+                        
+                        <div class="img2 video2"></div>
+                        <h2>Video Berternak</h2>
+                        <p>
+                            Windah Basudara                
+                        
+                        </p>
+                    </div>
+
+                    <div class="videobox2">
+                        
+                        <div class="img2 video2"></div>
+                        <h2>Video Berternak</h2>
+                        <p>
+                            Windah Basudara                
+                        
+                        </p>
+                    </div>
+
+                    <div class="videobox2">
+                        
+                        <div class="img2 video2"></div>
+                        <h2>Video Berternak</h2>
+                        <p>
+                            Windah Basudara                
+                        
+                        </p>
+                    </div>
+
+                    
+                </div>
+
+                <!--berkebun-->
+                <h1>Berkebun <span>lihat semua..</span></h1>
+                <div class="berkebun">
+                    <div class="videobox3">
+                        
+                        <div class="img3 video3"></div>
+                        <h2>Video Berkebun</h2>
+                        <p>
+                            Lilis              
+                        
+                        </p>
+                    </div>
+
+                    <div class="videobox3">
+                        
+                        <div class="img3 video3"></div>
+                        <h2>Video Berkebun</h2>
+                        <p>
+                            Lilis                
+                        
+                        </p>
+                    </div>
+
+                    <div class="videobox3">
+                        
+                        <div class="img3 video3"></div>
+                        <h2>Video Berkebun</h2>
+                        <p>
+                            Lilis                 
+                        
+                        </p>
+                    </div>
+
+                    <div class="videobox3">
+                        
+                        <div class="img3 video3"></div>
+                        <h2>Video Berkebun</h2>
+                        <p>
+                            Lilis                 
+                        
+                        </p>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+
+        </div>
+       
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-content">
+
+                <a href="#" class="logo-footer">
+                    <span>Mari</span>Belajar.
+                </a>
+    
+    
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, vitae provident. A eveniet dolore, tenetur eaque soluta, commodi, quibusdam tempore id enim ex recusandae assumenda labore unde vel. Nihil totam odit nisi quaerat libero dolor consequatur, quam veritatis eveniet, aspernatur dolorum laborum sed quidem nesciunt error ea molestiae quis alias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, perspiciatis quaerat.</p>
+    
+                <div class="socials">
+                    <a href="#wa"><i data-feather="phone"></i></a>
+                    <a href="#ig"><i data-feather="instagram"></i></a>
+                    <a href="#tw"><i data-feather="twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    Copyright © 2023 MariBelajar. All rights reserved
+                </p>
+            </div>
+            
+        </footer>
+
+        <!--feathericons-->
+        <script>
+            feather.replace()
+        </script>
+
+        <!--JS-->
+        <script src="/style/script.js"></script>
+    </body>
+</html>
